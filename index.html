@@ -2,31 +2,58 @@
 <head>
 	<title> Linux Everywhere </title>
 	<link rel="icon" href="images/le.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style type="text/css">
+            @-ms-viewport{
+                    width: extend-to-zoom;
+                    zoom:1.0;
+            }
+
+            .nav{
+                    float:right;
+            }
+
+            ul {
+                    list-style:none;
+            }
+
+            .nav li a{
+		    text-decoration:none;
+                    padding:10px 15px;
+                    display:block;
+	    }
+            
+            .nav li a:hover{
+                    background-color:#434343;
+            }
+
+            .nav > li {
+                    float:left;
+            }
+
+            .nav li ul {
+                    display:none;
+                    position:absolute;
+
+            }
+
+	    .nav  li:hover > ul {
+                    display:block;
+            }
+
 	    #header{
 		    background-color: white;
-                    height: 30px;
+                    min-height: 60px;
                     border-bottom-style: solid;
                     border-color:#7C8CB2 ;
-                    border-bottom-width: 15px;
-	    }
-
-	    #logo{
-	            background-image: url('images/cover.png'); 
-		    background-repeat: no-repeat;	    
-		    width: 600; height: 270px;
-	            float:none;
-                    border-bottom-style: solid;
-                    border-color:#7C8CB2 ;
-                    border-bottom-width: 15px;
-	    }
+                    border-bottom-width: 5px;
+      	    }
 
 	    #content{
-		    background-image: url('images/watermark.png');
-                    opacity: 0.5;
+	            background-image: url('images/cover.png'); 
+		    background-repeat: no-repeat;	    
+		    width: 600; min-height: 530px;
 	            float:none;
-                    height: 280px;
-                    align:center;
 	    }
 
 	    #solucion{
@@ -34,9 +61,9 @@
                     opacity:0.4;
 	            float:left;
 	 	    width:28%;
-                    height:200px;
+                    min-height:200px;
                     border-radius:20px;
-                    margin-top: 30px;
+                    margin-top: 300px;
                     margin-right:30px;
                     margin-left:80px;
 	    }
@@ -46,9 +73,9 @@
                     opacity:0.2;
                     float:left;
                     width:28%;
-                    height:200px;
+                    min-height:200px;
                     border-radius:20px;
-                    margin-top:30px;
+                    margin-top:300px;
                     margin-right:30px;
 	    }
 
@@ -57,8 +84,8 @@
                     opacity:0.4;
                     float:left;
                     width:28%;
-                    height:200px;
-                    margin-top:30px;
+                    min-height:200px;
+                    margin-top:300px;
                     border-radius:20px;
 	    }
 
@@ -66,30 +93,41 @@
 		    background-color: #BDBDBD;
 	            float:none;
 	            clear:both;
+                    min-heigth:30px;
 	    }
+
+            #header, #logo,#content, #footer{
+                    margin-left: 1%;
+                    margin-right: 1%;
+            }
         </style>
 </head>
 
 <body>
-	<div id="header" align="center">
-        <img align=left src="images/penguin.png" height="25" width="30">
-        <h3 align=right color=white >
-        <a href="index.html">Inicio</a>
-        <a href="novedades.html">Novedades</a>
-        <a href="nosotros.html"> Nosotros</a> 
-        <a href="servicios.html">Servicios</a></div>
-        </h3>
-	<div id="logo" align="center" width: 400; height: 200;>
-		&nbsp;</div>
-
+	<div id="header">
+        <img align=left src="images/penguin.png" height="60" width="55">
+        <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+        	<li><a href="novedades.html">Novedades</a></li>
+       		<li><a href="nosotros.html"> Nosotros</a></li>
+        	<li><a href="servicios.html">Servicios</a>
+                  	<ul>
+                                <li><a href="servicios_solucion.html">Soluciones</a></li>
+		                <li><a href="servicios_capa.html"> Capacitaciones</a></li>
+                		<li><a href="servicios_contacto.html">Contactanos</a></li>
+			</ul>
+                </li>
+        </ul>
+        </div>
+	
 	<div id="content">
-		<div id="solucion"> Mateito3.1
+		<div id="solucion">
                 </div>	
 
-		<div id="capa"> Mateito3.2
+		<div id="capa">
                 </div>	
 
-		<div id="contacto"> Mateito3.3
+		<div id="contacto">
                 </div>	
 	</div>
 
