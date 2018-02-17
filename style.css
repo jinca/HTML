@@ -1,0 +1,145 @@
+body{
+  font-family: 'Gidole';
+}
+@font-face {
+    font-family: 'Gidole';
+    src: url('fonts/Gidole-Regular.eot');
+    src: url('fonts/Gidole-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gidole-Regular.woff2') format('woff2'),
+        url('fonts/Gidole-Regular.woff') format('woff'),
+        url('fonts/Gidole-Regular.ttf') format('truetype'),
+        url('fonts/Gidole-Regular.svg#Gidole-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@-ms-viewport{
+        width: extend-to-zoom;
+        zoom:1.0;
+}
+
+.nav{
+        float:right;
+}
+
+ul {
+        list-style:none;
+}
+
+.nav li a{
+text-decoration:none;
+        padding:10px 15px;
+        display:block;
+}
+
+.nav li a:hover{
+        background-color:#434343;
+}
+
+.nav > li {
+        float:left;
+}
+
+.nav li ul {
+        display:none;
+        position:absolute;
+
+}
+
+.nav  li:hover > ul {
+        display:block;
+}
+.text-center .img-responsive{
+  display: initial;
+}
+.text-center{
+  padding-bottom: 3%;
+}
+.icon, .text-section{
+  text-align: center;
+  color: #637D96;
+}
+
+#solution{
+    min-height:200px;
+    border-radius:20px;
+}
+#training{
+    min-height:200px;
+    border-radius:20px;
+}
+#contact{
+    min-height:200px;
+    border-radius:20px;
+}
+.background-linux{
+  padding-top: 2%;
+}
+#footer{
+  background-color: #172042;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#footer a{
+  color: #fff;
+}
+#footer .space{
+  margin-right: 10px;
+}
+.area .icon{
+  background: rgba(99, 125, 150,1);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.area .icon .img-responsive{
+  display: initial;
+}
+#content{
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+.background{
+  background-image: url(images/background.png);
+  background-position: center -120px;
+  background-repeat: repeat-x;
+}
+/* CSS BOOTSTRAP */
+
+.navbar-default{
+  background: none;
+  border: none;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #637D96;
+}
+.navbar-default .navbar-nav > li > a{
+  padding-top: 20px;
+  font-size: 16px;
+}
+.navbar-brand{
+  padding: 0;
+}
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .navbar-default{
+    border-bottom: none;
+  }
+  .navbar-default .navbar-collapse{
+    border-top: 2px solid #637D96;
+  }
+}
