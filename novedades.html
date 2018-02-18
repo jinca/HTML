@@ -1,149 +1,100 @@
 <!DOCTYPE html>
-<head>
-	<title> Linux Everywhere </title>
-	<link rel="icon" href="images/le.ico">
-        <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-        <style type="text/css">
-            @-ms-viewport{
-                    width: extend-to-zoom;
-                    zoom:1.0;
-            }
-
-            .nav{
-                    float:right;
-            }
-
-            ul {
-                    list-style:none;
-            }
-
-            .nav li a{
-		    text-decoration:none;
-                    padding:10px 15px;
-                    display:block;
-	    }
-            
-            .nav li a:hover{
-                    background-color:#434343;
-            }
-
-            .nav > li {
-                    float:left;
-            }
-
-            .nav li ul {
-                    display:none;
-                    position:absolute;
-
-            }
-
-	    .nav  li:hover > ul {
-                    display:block;
-            }
-
-	    #header{
-		    background-color: white;
-                    min-height: 60px;
-                    border-bottom-style: solid;
-                    border-color:#7C8CB2 ;
-                    border-bottom-width: 5px;
-      	    }
-
-	    #content{
-	            background-image: url('images/cover.png'); 
-		    background-repeat: no-repeat;	    
-		    min-height:230px;
-	            float:none;
-	    }
-
-	    #imagen{
-                    background-color: black;
-                    opacity:0.4;
-	            float:left;
-	 	    width:42%;
-                    min-height:364px;
-                    border-radius:20px;
-                    margin-top: 120px;
-                    margin-right:30px;
-                    margin-left:40px;
-	    }
-
-	    #texto{
-		    background-color: white;
-                    color: white;
-                    opacity:0.2;
-                    float:left;
-                    width:46%;
-                    min-height:250px;
-                    border-radius:20px;
-                    margin-top:25px;
-                    margin-right:30px;
-	    }
-
-	    #footer{
-		    background-color: #BDBDBD;
-	            float:none;
-	            clear:both;
-                    min-heigth:30px;
-	    }
-
-            #header, #logo,#content, #footer{
-                    margin-left: 1%;
-                    margin-right: 1%;
-            }
-        </style>
-</head>
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Linux Everywhere</title>
+    <!-- Bootstrap -->
+		<link rel="icon" href="images/le.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 <body>
-	<div id="header">
-        <img align=left src="images/penguin.png" height="60" width="55">
-        <ul class="nav">
-                <li><a href="index.html">Inicio</a></li>
-        	<li><a href="novedades.html">Novedades</a></li>
-       		<li><a href="nosotros.html"> Nosotros</a></li>
-        	<li><a href="servicios.html">Servicios</a>
-                  	<ul>
-                                <li><a href="servicios_solucion.html">Soluciones</a></li>
-		                <li><a href="servicios_capa.html"> Capacitaciones</a></li>
-                		<li><a href="servicios_contacto.html">Contactanos</a></li>
-			</ul>
-                </li>
-        </ul>
-        </div>
-	
-	<div id="content">
-		<div id="imagen">
-                </div>	
 
-		<div id="texto">
-			<font  color="black" face="Book Antiqua" size="3">
-			    <p>SUMMIT, es la supercomputadora más poderosa de los Estados Unidos, y está en construcción en el 
-			    departamento de Energía del Laboratorio Nacional Oak Ridge (ORNL). El director de ORNL, Thomas Zacharia 
-			    nos indica el estado y las novedades que la nueva máquina proveerá para los científicos en esta nueva temporada.</p>
 
-                            <p>Actualmente su competencia (según los standares de Linpack) se está construyendo en China, una supercomputadora 
-			    de 93 petaflops llamada Sunway TaihuLight. Summit esta siendo diseñada para alcanzar los 200 petaflops en doble 
-			    precisión matemática (64-bit floating point) y 3 exaflops para 32-bit/16-bit operaciones aritméticas empleadas por 
-			    códigos de machine learning durante este 2018; y si China o ninguna otra computadora puede alcanzarla en este interim, 
-			    entonces Estados Unidos podría volver a tener el liderazgo de la lista TOP500. Estados Unidos no ha sido el primero 
-			    en la lista desde el año, 2012.</p>
+<header id="header">
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+				<img align=left src="images/penguin.png" width="50">
+			</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="nosotros.html"> Nosotros</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+						<li><a href="servicios_solucion.html">Soluciones</a></li>
+						<li><a href="servicios_capa.html"> Capacitaciones</a></li>
+						<li><a href="servicios_contacto.html">Contactanos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+<section id="page">
+	<div class="row">
+			<div class="col-md-4">
+				.
+			</div>
+			<div class="col-md-8">
+<div class="page-header">
+<h1>Nosotros</h1>
+</div>
 
-                	    <p>El sistema soportará muchos proyectos y aplicaciones como ACME (para modelar el clima), 
-			    DIRAC (química cuántica relativista), FLASH (astrofísica), NWCHEM (química computacional), 
-			    GTC (física de plasma), y NAMD (biofísica) que planean mejorar su desempeño con el nuevo poder de Summit.</p>
 
-	  	            <p>Fuente: 
-			    <a href="https://www.top500.org/news/oak-ridge-readies-summit-supercomputer-for-2018-debut/">
-				    https://www.top500.org/news/oak-ridge-readies-summit-supercomputer-for-2018-debut/</a></p>
 
-		        </font>  
-                </div>	
+<p>SUMMIT, es la supercomputadora más poderosa de los Estados Unidos, y está en construcción en el departamento de Energía del Laboratorio Nacional Oak Ridge (ORNL). El director de ORNL, Thomas Zacharia nos indica el estado y las novedades que la nueva máquina proveerá para los científicos en esta nueva temporada.</p>
+
+<p>Actualmente su competencia (según los standares de Linpack) se está construyendo en China, una supercomputadora de 93 petaflops llamada Sunway TaihuLight. Summit esta siendo diseñada para alcanzar los 200 petaflops en doble precisión matemática (64-bit floating point) y 3 exaflops para 32-bit/16-bit operaciones aritméticas empleadas por códigos de machine learning durante este 2018; y si China o ninguna otra computadora puede alcanzarla en este interim, entonces Estados Unidos podría volver a tener el liderazgo de la lista TOP500. Estados Unidos no ha sido el primero en la lista desde el año, 2012.</p>
+
+<p>El sistema soportará muchos proyectos y aplicaciones como ACME (para modelar el clima), DIRAC (química cuántica relativista), FLASH (astrofísica), NWCHEM (química computacional), GTC (física de plasma), y NAMD (biofísica) que planean mejorar su desempeño con el nuevo poder de Summit.</p>
+
+<p>Fuente: https://www.top500.org/news/oak-ridge-readies-summit-supercomputer-for-2018-debut/</p>
+
+			</div>
 	</div>
+</section>
+<footer id="footer" class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
 
-	<div align=right id="footer">
-        <img src="images/fb.png" height="35" width="40" border="0">
-        <img src="images/you.png" height="35" width="40">
-        <img src="images/twi.png" height="35" width="40">
-	</div>
+			</div>
+			<div class="col-md-6">
+				<div class="pull-right">
+					<a class="space" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+					<a class="space" href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+					<a  class="space"href="#"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+</footer>
 </body>
-
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</html>
