@@ -110,6 +110,12 @@ text-decoration:none;
 }
 /* CSS BOOTSTRAP */
 
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
 .navbar-default{
   background: none;
   border: none;
