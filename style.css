@@ -95,6 +95,12 @@ text-decoration:none;
   padding-bottom: 10px;
   text-align: center;
 }
+
+.center-image{
+
+  padding-top: 75px;
+}
+
 .area .icon .img-responsive{
   display: initial;
 }
