@@ -158,52 +158,117 @@ text-decoration:none;
 
 /* List of the services we offer so far */
 
-ol {
-    counter-reset: li; /* Initiate a counter */
-    list-style: none; /* Remove default numbering */
-    *list-style: decimal; /* Keep using default numbering for IE6/7 */
-    font: 15px 'trebuchet MS', 'lucida sans';
-    padding: 0;
-    margin-bottom: 4em;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+.list-type1{
+width:400px;
+margin:0 auto;
 }
 
-
-.rounded-list a{
-    position: relative;
-    display: block;
-    padding: .4em .4em .4em 2em;
-    *padding: .4em;
-    margin: .5em 0;
-    background: #ddd;
-    color: #444;
-    text-decoration: none;
-    border-radius: .3em;
-    transition: all .3s ease-out;
+.list-type1 ol{
+counter-reset: li;
+list-style:none;
+*list-style:decimal;
+font-size: 15px;
+font-family: 'Raleway', sans-serif;
+padding:0;
+margin-bottom:4em;
+}
+.list-type1 ol ol{
+margin: 0 0 0 2em;
+}
+.list-type1 a{
+position: relative;
+display: block;
+padding:.4em .4em .4em 2em;
+*padding: .4em;
+margin: .5em 0;
+background: #637D96;
+color: #000;
+text-decoration:none;
+-moz-border-radius: .3em;
+-webkit-border-radius: .3em;
+border-radius: 10em;
+transition: all .2s ease-in-out;
 }
 
-.rounded-list a:hover{
-    background: #eee;
+.list-type1 a:hover{
+background: #d6d4d4;
+text-decoration:none
+transform: scale(1.1);
 }
 
-.rounded-list a:hover:before{
-    transform: rotate(360deg);
+.list-type1 a:before {
+content: counter(li);
+counter-increment:li;
+position:absolute;
+left: -1.3em;
+top:50%
+margin-top:-1.3em;
+background:#637D96;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid #fff;
+text-align: center;
+font-weight:bold;
+-moz-border-radius: 2em;
+-webkit-border-radius: 2em;
+border-radius: 2em;
+color: #FFF;
 }
 
-.rounded-list a:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -1.3em;
-    top: 50%;
-    margin-top: -1.3em;
-    background: #87ceeb;
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    border: .3em solid #fff;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 2em;
-    transition: all .3s ease-out;
+/* List the training courses we are offering */
+
+.list-type5{
+width:410px;
+margin-left:50;
 }
+.list-type5 ol {
+list-style-type: none;
+list-style-type: decimal !ie; /*IE 7- hack*/
+margin:0;
+margin-left: 1em;
+padding: 0;
+counter-reset: li-counter;
+}
+.list-type5 ol li{
+position: relative;
+margin-bottom: 1.5em;
+padding: 0.5em;
+background-color: #D2D2D2;
+padding-left: 58px;
+}
+
+.list-type5 a{
+text-decoration:none;
+color:black;
+font-size:15px;
+font-family: 'Raleway', sans-serif;
+}
+
+.list-type5 li:hover{
+box-shadow:inset -1em 0 #637D96;
+-webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+transition: box-shadow 0.5s;
+}
+
+.list-type5 ol li:before {
+position: absolute;
+top: -0.3em;
+left: -0.5em;
+width: 1.8em;
+height: 1.2em;
+font-size: 2em;
+line-height: 1.2;
+font-weight: bold;
+text-align: center;
+color: white;
+background-color: #637D96;
+transform: rotate(-20deg);
+-ms-transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+z-index: 99;
+overflow: hidden;
+content: counter(li-counter);
+counter-increment: li-counter;
+}
+
